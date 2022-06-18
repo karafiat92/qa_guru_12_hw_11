@@ -1,14 +1,16 @@
 package tests;
 
 import com.github.javafaker.Faker;
+import config.CredentialsConfig;
 import link.i.pages.RegistrationFormPage;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-@Tag("linki")
+@Tag("systemProperties")
 public class RegistrationFormTests extends TestBase {
     RegistrationFormPage regForm = new RegistrationFormPage();
     Faker faker = new Faker();

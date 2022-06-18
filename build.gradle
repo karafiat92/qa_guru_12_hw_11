@@ -60,26 +60,9 @@ tasks.withType(Test) {
     }
 }
 
-task linki_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags "linki"
-    }
-}
-
-task test5(type: Test) {
-    useJUnitPlatform {
-        includeTags "test5"
-    }
-}
-
 task systemProperties(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags "systemProperties"
     }
 }
 
-task owner(type: Test) {
-    useJUnitPlatform{
-        includeTags "owner"
-    }
-}
